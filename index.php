@@ -462,7 +462,6 @@
             <div class="box">
                 <i class="fas fa-home"></i>
                 <h3 class="basic">basic plan</h3>
-                {{!-- <div class="price"><span>Rs</span>250<span>/mo</span></div> --}}
                 <div class="list">
                     <p>Interior Design</p>
                     <p>Refurbishment</p>
@@ -476,7 +475,6 @@
             <div class="box">
                 <i class="fas fa-building"></i>
                 <h3 class="premium">premium plan</h3>
-                {{!-- <div class="price"><span>Rs</span>650<span>/mo</span></div> --}}
                 <div class="list">
                     <p>Interior Design</p>
                     <p>Refurbishment</p>
@@ -490,7 +488,6 @@
             <div class="box">
                 <i class="fas fa-city"></i>
                 <h3 class="ultimate">ultimate plan</h3>
-                {{!-- <div class="price"><span>Rs</span>1250<span>/mo</span></div> --}}
                 <div class="list">
                     <p>Interior Design</p>
                     <p>Refurbishment</p>
