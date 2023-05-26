@@ -48,11 +48,11 @@ try {
 
     // Check if the email was sent successfully
     if ($response->statusCode() === 202) {
-        echo "<script>alert('Email sent successfully.');</script>";
+        echo "<script>alert('Email sent successfully.');window.location.href='connect.php';</script>";
     } else {
-        echo "<script>alert('Failed to send email. Status code: " . $response->statusCode() . "');</script>";
+        echo "<script>alert('Failed to send email. Status code: " . $response->statusCode() . "');window.location.href='connect.php';</script>";
     }
 } catch (Exception $e) {
-    echo "<script>alert('Error sending email: " . $e->getMessage() . "');</script>";
+    echo "<script>alert('Error sending email: " . $e->getMessage() . "');window.location.href='connect.php';</script>";
 }
 ?>

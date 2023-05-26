@@ -47,11 +47,12 @@ try {
     // Check if the email was sent successfully
     if ($response->statusCode() === 202) {
         // Alert message
-        echo "<script>alert('Message Successfully Sent to SM Constructions.');</script>";
+        echo "<script>alert('Message Successfully Sent to SM Constructions.');window.location.href='../index.php';</script>";
+       
     } else {
-        echo "<script>alert('Failed to send email. Status code: " . $response->statusCode() . "');</script>";
+        echo "<script>alert('Failed to send email. Status code: " . $response->statusCode() . "');window.location.href='../index.php';</script>";
     }
 } catch (Exception $e) {
-    echo "<script>alert('Error sending email: " . $e->getMessage() . "');</script>";
+    echo "<script>alert('Error sending email: " . $e->getMessage() . "'); window.location.href='../index.php';</script>";
 }
 ?>
