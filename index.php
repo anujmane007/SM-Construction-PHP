@@ -24,9 +24,9 @@
 
     <header class="header">
 
-        <a href="/" class="logo">
+        <a href="index.php" class="logo">
             <img src="assets/client1-modified.jpg" alt="SM Construction & Developer's logo">
-            <span>Construction & Developer's</span>
+            <span>SM Construction & Developer's</span>
         </a>
 
         <nav class="navbar">
@@ -85,18 +85,19 @@
 
             <div class="swiper-wrapper">
 
-                <section class="swiper-slide slide" style="background: url(assets/client1.jpg) no-repeat;">
+                <section class="swiper-slide slide"
+                    style="background: url(assets/client1.jpg) no-repeat; background-color: black;">
                     <div class="content">
                         <h3>we provide best service</h3>
                         <p> Our commitment and expertise bring clients' unique visions to life. Emphasizing
-                            collaboration,
-                            we work closely with clients to surpass their expectations. By understanding their needs, we
-                            deliver a final product that exceeds their original vision.</p>
+                            collaboration, we work closely with clients to surpass their expectations. By understanding
+                            their needs, we deliver a final product that exceeds their original vision.</p>
                         <a href="files/connect.php" class="btn">get started</a>
                     </div>
                 </section>
 
-                <section class="swiper-slide slide" style="background: url(assets/home-slide-2.jpg) no-repeat;">
+
+                <section class="swiper-slide slide" style="background: url(assets/home-slide-2.jpg) no-repeat; ">
                     <div class="content">
                         <h3>making dream come to life</h3>
                         <p> "Our construction website brings dreams to life." With a focus on exceptional services,
@@ -444,6 +445,17 @@
                 </div>
 
             </div>
+            <!-- Add your review section -->
+            <div class="swiper-slide add-review">
+                <div class="add-review-content">
+                    <a href="comment-system-project/index.php" style="color: black; text-decoration: none;">
+                        <i class="fas fa-plus-circle"></i>
+                        <p>Add your review</p>
+                    </a>
+                </div>
+            </div>
+
+
 
         </div>
 

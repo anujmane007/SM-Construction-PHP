@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Let's Connect</title>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
@@ -14,86 +13,56 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <link rel="shortcut icon" type="image/png" href="../assets/client1.jpg">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://cdn.sendgrid.com/client/sendgrid.js"></script>         
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
     <style>
         .navbar {
             display: none;
         }
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        form {
-            display: inline-block;
-            text-align: left;
-        }
-
-        label {
-            display: block;
-            font-size: 15px;
-            margin-bottom: 5px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #ffffff;
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #065bda;
-        }
-
-        @media screen and (max-width: 600px) {
-            .container {
-                height: 70%;
-            }
-
-            form {
-                width: 70%;
-            }
-        }
-
-        @media screen and (max-width: 964px) {
+        @media (max-width: 1140px) {
             .navbar {
                 display: block;
             }
         }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+
+            text-align: center;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: 34px;
+            padding: 44px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        }
+
+        @media (max-width: 1140px) {
+            .header #menu-btn {
+                display: inline-block;
+            }
+
+        }
     </style>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-    <!-- {{!-- This is eddited header --}} -->
-
-    <!-- header section starts  -->
-
     <header class="header">
 
         <a href="../index.php" class="logo">
@@ -169,56 +138,6 @@
         </div>
 
     </div>
-
-    <!-- header section ends -->
-
-
-    <div class="container" style="border: 1px solid #ccc; background-color: #f5ad38;">
-        <h1>Let's Connect With SM Construction</h1>
-        <form id="myForm" method="post" action="send_email.php">
-            <label for="username">Name:</label>
-            <input type="text" id="username" name="username" required><br>
-    
-            <label for="contactnumber">Contact Number:</label>
-            <input type="text" id="contactnumber" name="contactnumber" required><br>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-    
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" required></textarea><br>
-    
-            <label for="plan">Choose a Plan:</label>
-            <select id="plan" name="plan">
-                <option value="basic">Basic Plan</option>
-                <option value="premium">Premium Plan</option>
-                <option value="ultimate">Ultimate Plan</option>
-            </select>
-    
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-    <!-- footer section starts  -->
-
-    <section class="footer">
-
-        <div class="links">
-            <a class="btn" href="../index.php">home</a>
-            <a class="btn" href="../index.php">about</a>
-            <a class="btn" href="../index.php">services</a>
-            <a class="btn" href="../index.php">projects</a>
-            <a class="btn" href="../index.php">pricing</a>
-            <a class="btn" href="../index.php">contact</a>
-            <a class="btn" href="../index.php">blogs</a>
-        </div>
-
-        <div class="credit"> created by <span>Jay Shree Ram</span> | all rights reserved! </div>
-
-    </section>
-
-    <!-- footer section ends -->
-
     <script>
         let navbar = document.querySelector('.header .navbar');
         let searchForm = document.querySelector('.header .search-form');

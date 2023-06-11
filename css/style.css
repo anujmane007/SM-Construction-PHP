@@ -116,7 +116,9 @@ section {
 
 .header .logo span {
   color: var(--white);
-  padding: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+  font-size: 19px;
 }
 
 .header .logo img {
@@ -421,7 +423,7 @@ section {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  background-size: cover !important;
+  background-size: contain !important;
   background-position: center !important;
 }
 
@@ -713,7 +715,7 @@ section {
   margin-left: 5px;
 }
 
-.stars i{
+.stars i {
   cursor: pointer;
 }
 
@@ -989,17 +991,23 @@ section {
   color: var(--yellow);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .header {
     padding: 1.5rem 2rem;
   }
 
+  .header .logo span {
+    color: var(--white);
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  
   section {
     padding: 3rem 5%;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1140px) {
   html {
     font-size: 55%;
   }
@@ -1050,6 +1058,12 @@ section {
     width: 90%;
   }
 
+  .header .logo span {
+    color: var(--white);
+    margin-left: 5px;
+    margin-top: 6px;
+  }
+
   .home .slide {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1065,17 +1079,17 @@ section {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 560px) {
   html {
     font-size: 50%;
   }
-
+  .header .logo span {
+    color: var(--white);
+    margin-left: 5px;
+    margin-top: 0px;
+}
   .about .row .content h3 {
     font-size: 2.5rem;
-  }
-
-  .header .logo span {
-    margin-top: -10px;
   }
 }
 

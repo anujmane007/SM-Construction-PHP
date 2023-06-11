@@ -119,7 +119,7 @@
 
         <a href="../index.php" class="logo">
             <img src="../assets/client1-modified.jpg" alt="SM Construction & Developer's logo">
-            <span>Construction & Developer's</span>
+            <span>SM Construction & Developer's</span>
         </a>
 
         <nav class="navbar">
@@ -266,8 +266,7 @@
             });
         </script>
 
-        {{!--
-        <script src="script.js"></script> --}}
+        <script src="script.js"></script>
 
 </body>
 
